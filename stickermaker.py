@@ -30,9 +30,9 @@ def int2hex(i):
 	
 # Range starts at 100 (hex 64):
 BASE_MAC_ADDRESS="70:B3:D5:A9:C0:64"
-# Begin at B + 100 (399 = 499):
-B =399
-# End before N + 100 (400 = 500):
+# Begin at B + 100 (eg. 399 = 499):
+B = 399
+# End before N + 100 (eg. 400 = 500):
 N = 400
 
 if not os.path.exists("data"):
