@@ -28,9 +28,12 @@ def int2hex(i):
 	return "0x%012x"%(i)
 
 	
-
+# Range starts at 100 (hex 64):
 BASE_MAC_ADDRESS="70:B3:D5:A9:C0:64"
-N = 300
+# Begin at B + 100 (399 = 499):
+B =399
+# End before N + 100 (400 = 500):
+N = 400
 
 if not os.path.exists("data"):
     os.makedirs("data")
@@ -39,7 +42,7 @@ pdffiles = []
 
 v, r = getCmd("rm -rf out.pdf")
 
-for i in range(N):
+for i in range(B, N):
 	ih = mac2hex(BASE_MAC_ADDRESS)
 	ii = hex2int(ih)
 	ii += i
