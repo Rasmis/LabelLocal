@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# Opdateret 2019-07-31 af Rasmus Malver
+
 import os
 import subprocess
 	
